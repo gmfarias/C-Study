@@ -1,0 +1,61 @@
+
+-- Terminal
+
+dotnet --version
+dotnet --list-sdks
+dotnet --list-runtimes
+
+ls ou dir - Conteúdo do diretório
+clear ou cls - limpar o terminal
+
+-- VSCOde Extensões
+	
+C# - Base language support for C#
+One Dark Pro
+vscode-icons
+
+-- Tipos de projetos
+
+dotnet new console		> Novo Console Application
+dotnet new classlib 	> Nova Class Library
+dotnet new web 			> Novo projeto ASP.NET Core
+dotnet new mvc 			> Novo projeto ASP.NET Core
+dotnet new webapi 		> Novo projeto ASP.NET Core
+dotnet new mstest 		> Novo projeto Microsoft Test
+
+Ex:
+dotnet new console -o MeuApp	> -o especifica o nome da pasta
+								> MeuApp ( Não usar espaço , não usar traço ou outro separador )
+
+dotnet restore			> busca os pacotes necessários para rodar a aplicação - Recomendado rodar sempre que pegar uma nova aplicação para manutenção
+dotnet clean 			> Limpa todos os arquivos de cache da aplicação - Recomendado rodar antes do build
+dotnet build			> Compila a aplicação
+dotnet run    			> Roda a aplicação (Modo release)
+
+-- Outras opções do comando run - Variáveis de ambiente ( Definição da equipe do projeto )
+
+dotnet run --environment=$SEU_AMBIENTE
+dotnet run --environment=development
+dotnet run --environment=production
+
+Ex: dotnet run --enviroment=Development
+
+-- Abrir o VSCode a partir da pasta do projeto
+
+code .
+
+Configuração 
+	ctrl + ,
+	Format On Save 
+
+
+Escopo do programa - Fluxo de execução
+	Importações "using"
+	Namespace
+	Classe
+	Método princial
+
+OO
+
+Alan Kay
+Smalltalk
